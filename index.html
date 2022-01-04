@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subir Imagenes</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <form name="formulario-envia" id="formulario-envia" enctype="multipart/form-data" method="post">
+
+        <table>
+            <tr>
+                <td>Nombre:</td>
+                <td><input type="text" name="txtnom" id="txtnom"></td>
+            </tr>
+            <tr>
+                <td>Foto:</td>
+                <td><input type="file" name="foto" id="foto"></td>
+            </tr>
+            <tr>
+                <td><input type="button" name="btn" value="REGISTRAR" onclick="registra_paciente();"></td>
+            </tr>
+        </table>
+    </form>
+    
+    <script src="javascript/funciones.js"></script>
+</body>
+</html>
